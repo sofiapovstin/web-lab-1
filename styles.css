@@ -15,10 +15,9 @@ body {
 
 }
 
-ul, ol {
+ul, ol{
     margin-left: 20px;
 }
-
 .menu ul {
     list-style: none;
     padding: 0;
@@ -29,6 +28,10 @@ ul, ol {
     white-space: nowrap;
     margin-right: 10px;
     display: inline-block;
+}
+
+.menu ul li:last-child {
+    margin-right: 0; /* Remove margin from the last item */
 }
 
 .menu ul li a {
@@ -51,30 +54,29 @@ a.current {
     background-color: #555;
     color: #fff;
 }
-.x {
+.x{
     font-size: 4vmin;
     box-sizing: border-box;
     width: 40%;
     max-width: 50%;
     text-align: left;
-    position: absolute;
-    top: 35px;
-    right: 10px;
+    float: right;
+    margin-top: 35px;
     padding: 0 10px;
 }
 .y{
     font-size: 3vmin;
     width: 37%;
+    margin: -9px 10px 0 0;
     text-align: right;
-
-    top: -9px;
-    left: 10px;
+    float: left;
     padding: 0 10px;
 }
 .block{
     font-family: Calibri, serif;
     padding: 10px;
     font-size: 2vmin;
+
 }
 
 .one{
