@@ -12,33 +12,27 @@ body {
     grid-template-columns: 26% 47% 27%;
     grid-template-rows: 23% 26% 26% 26%;
     height: 99vh;
-    text-align: center;
 
 }
 
-ul, ol{
+ul, ol {
     margin-left: 20px;
 }
+
 .menu ul {
     list-style: none;
     padding: 0;
-    display: flex; /* Use flexbox to make items horizontal */
 }
 
 /* Style menu items */
 .menu ul li {
     white-space: nowrap;
-    margin-right: 10px; /* Add space between menu items */
-}
-
-.menu ul li:last-child {
-    margin-right: 0; /* Remove margin from the last item */
+    margin-right: 10px;
+    display: inline-block;
 }
 
 .menu ul li a {
     background-color: #e9d3fc;
-
-    width: 50%;
     text-decoration: none;
     color: #333;
     font-weight: bold;
@@ -49,39 +43,38 @@ ul, ol{
 }
 
 .menu ul li a:hover {
-    background-color: #f2f2f2; /* Background color on hover */
-    color: #000; /* Change text color on hover */
+    background-color: #f2f2f2;
+    color: #000;
 }
-section{
-    display: inline-block;
-}
+
 a.current {
     background-color: #555;
-    color: #fff; /* Зміни колір тексту для активного посилання */
+    color: #fff;
 }
-.x{
+.x {
     font-size: 4vmin;
     box-sizing: border-box;
     width: 40%;
     max-width: 50%;
     text-align: left;
-    float: right;
-    margin-top: 35px;
+    position: absolute;
+    top: 35px;
+    right: 10px;
     padding: 0 10px;
 }
 .y{
-    font-size: 4vmin;
+    font-size: 3vmin;
     width: 37%;
-    margin: -9px 10px 0 0;
     text-align: right;
-    float: left;
+
+    top: -9px;
+    left: 10px;
     padding: 0 10px;
 }
 .block{
     font-family: Calibri, serif;
     padding: 10px;
     font-size: 2vmin;
-
 }
 
 .one{
